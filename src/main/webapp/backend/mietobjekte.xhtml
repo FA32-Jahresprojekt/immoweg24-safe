@@ -33,9 +33,6 @@
                         <p:dataTable id="itemTable" var="item" value="#{mietobjekt.itemList}" style="width: 100%;">
                             <p:column headerText="Id">
                                 <h:outputText value="#{item.id}"/>
-                            </p:column>   
-                           <p:column headerText="Adresse" style="width: 350px;">
-                                <b><h:outputText value="#{item.adresse.toLabel()}"/></b>
                             </p:column>
                             <p:column headerText="Kaltkosten">
                                 <h:outputText value="#{item.kaltkosten}"/>

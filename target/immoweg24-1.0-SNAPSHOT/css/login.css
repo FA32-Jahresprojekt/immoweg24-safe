@@ -1,0 +1,156 @@
+
+.login-body {
+    /*
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  background-image: url("#{resource['siberia-layout:images/exceptions/mask-login.png']}")
+  */
+  font-family: "latoregular", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #4e5159;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4e5159), to(#1f2023));
+    background-image: -webkit-linear-gradient(top, #4e5159, #1f2023);
+    background-image: -moz-linear-gradient(top, #4e5159, #1f2023);
+    background-image: -ms-linear-gradient(top, #4e5159, #1f2023);
+    background-image: -o-linear-gradient(top, #4e5159, #1f2023);
+    background-image: linear-gradient(top, #4e5159, #1f2023);  
+}
+.login-body .login-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.login-body .login-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+.login-body .login-wrapper .logo-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 34px;
+  cursor: pointer;
+  z-index: 999;
+}
+.login-body .login-wrapper .logo-wrapper img {
+  width: auto;
+  height: 150px;
+}
+.login-body .login-wrapper .login-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.login-body .login-wrapper .login-wrapper .login-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ffffff;
+  width: 500px;
+  padding-left: 32px;
+  max-height: 90%;
+  overflow: auto;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text {
+  width: 65%;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text > h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #191a1c;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 24px;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text > span {
+  font-size: 13px;
+  font-weight: normal;
+  color: #525557;
+  display: block;
+  margin-bottom: 50px;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text > button {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  width: 118px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #21b5ad;
+  border: none;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text > button:hover {
+  background-color: #27d2c9;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text .login-input {
+  position: relative;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text .login-input > input {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text .login-input > i {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text .login-input > i.lock {
+  right: 10px;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text a {
+  font-size: 13px;
+  color: #21b5ad;
+  margin-top: 16px;
+  display: block;
+}
+.login-body .login-wrapper .login-wrapper .login-content .content-text a:hover {
+  color: #27d2c9;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.login-body .login-wrapper .login-wrapper .login-content > img {
+  width: 124px;
+  height: 125px;
+}
+
+@media (max-width: 992px) {
+  .login-body {
+    background-image: url("#{resource['siberia-layout:images/exceptions/mask-mobile-login.png']}"); 
+  }
+  .login-body .login-wrapper > img {
+    width: 100%;
+    height: auto;
+  }
+  .login-body .login-wrapper .login-wrapper .login-content > img {
+    width: 114px;
+    height: 115px;
+  }
+}
